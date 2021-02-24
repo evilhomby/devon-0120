@@ -2,7 +2,7 @@
 * 覆蓋 Bootstrap 預設樣式
 ************************************************************/
 :root {
-	--primary: #c60013;
+	--primary: #2baee5;
 }
 .bg-primary {
 	background-color: var(--primary) !important;
@@ -22,6 +22,10 @@
 }
 .border {
 	border-width: 2px !important;
+}
+.table th, .table td {
+	border-top: none;
+	border-bottom: 1px solid #c3c3c3;
 }
 
 /************************************************************
@@ -101,20 +105,35 @@ header .container, main .container {
 }
 
 .color-circle {
-	display: block;
+	display: inline-block;
+	margin-right: 0.5rem;
 	background: var(--primary);
 	color: #fff;
 	border-radius: 100%;
-	width: 64px;
-	height: 64px;
-	line-height: 67px;
+	width: 1.5rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1rem;
+	font-weight: 900;
+}
+
+.color-circle-sm {
+	display: inline-block;
+	margin-right: 0.5rem;
+	background: var(--primary);
+	color: #fff;
+	border-radius: 100%;
+	width: 1.5rem;
+	height: 1.5rem;
+	line-height: 1.5rem;
+	text-align: center;
+	font-size: 1rem;
 	font-weight: 900;
 }
 
 td.active {
-	background: #fff1d5;
+	background: #d8effe;
 }
 .table .text-muted {
 	font-size: 0.8em;
@@ -130,7 +149,7 @@ td.active {
 	padding-top: 0;
 }
 .qa .card-body {
-	background: #f0eeeb;
+	background: #e7ecf3;
 }
 .qa p {
 	padding: 0px 80px;
@@ -138,10 +157,13 @@ td.active {
 .qa p:last-child {
 	margin-bottom: 0;
 }
+.bg-gray {
+	background: #e7ecf3;
+}
 footer {
 	padding: 2% 0;
-	background: #fff;
-	color: #999;
+	background: #e7ecf3;
+	color: #3a3a3a;
 	text-align: center;
 }
 footer p {
@@ -149,6 +171,13 @@ footer p {
 }
 footer p:last-child {
 	margin: 0px;
+}
+footer a {
+	color: #3a3a3a;
+	text-decoration: none;
+}
+footer a:hover {
+	text-decoration: none;
 }
 
 @media (max-width: 768px) {
