@@ -73,7 +73,7 @@ li:first-child {
 	margin-top: 0;
 }
 main section.alt {
-	background: #f0eeeb;
+	background: #f0f0f0;
 }
 header .container, main .container {
 	position: relative;
@@ -103,18 +103,16 @@ header .container, main .container {
 	/* padding: 3rem 12rem; */
 	padding: 2rem 0rem;
 }
-
 .color-circle {
-	display: inline-block;
-	margin-right: 0.5rem;
+	display: block;
 	background: var(--primary);
 	color: #fff;
 	border-radius: 100%;
-	width: 1.5rem;
-	height: 1.5rem;
-	line-height: 1.5rem;
+	width: 64px;
+	height: 64px;
+	line-height: 67px;
 	text-align: center;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	font-weight: 900;
 }
 
@@ -132,6 +130,48 @@ header .container, main .container {
 	font-weight: 900;
 }
 
+#info {
+	background: url(../images/info-bg-pc.jpg) no-repeat;
+}
+
+#learn .card {
+	padding: 1.5rem 0;
+	border: none;
+	border-bottom: 5px solid #e8e8e8;
+	border-radius: 0;
+	position: relative;
+	filter: drop-shadow(0px 2px 2px #999);
+}
+#learn .card::after {
+	content: '';
+	border: 10px solid #e8e8e8;
+	border-bottom: none;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	position: absolute;
+	left: 50%;
+	bottom: -15px;
+	transform: translateX(-50%);
+
+}
+#learn .card.pl {
+	padding-left: 225px;
+}
+#learn .card.pr {
+	padding-right: 225px;
+}
+#learn .card-header {
+	background: transparent;
+}
+#learn .card-header::before {
+	content: '【 ';
+	color: var(--primary);
+}
+#learn .card-header::after {
+	content: ' 】';
+	color: var(--primary);
+}
+
 td.active {
 	background: #d8effe;
 }
@@ -139,9 +179,12 @@ td.active {
 	font-size: 0.8em;
 }
 
+.qa .card {
+	background: transparent;
+}
 .qa .card-header {
 	padding-top: 1rem;
-	background: #fff;
+	background: transparent;
 	border: none;
 	font-weight: 900;
 }
@@ -204,6 +247,12 @@ footer a:hover {
 		height: 48px;
 		line-height: 50px;
 		font-size: 1.25rem;
+	}
+	#info {
+		background: url(../images/info-bg-mobile.jpg) no-repeat;
+	}
+	#learn .card-header {
+		text-align: center;
 	}
 	.table {
 		font-size: 12px;
