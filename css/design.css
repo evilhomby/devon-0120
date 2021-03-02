@@ -156,8 +156,10 @@ header .container, main .container {
 }
 #learn .card.pl {
 	padding-left: 225px;
+	padding-right: 2rem;
 }
 #learn .card.pr {
+	padding-left: 2rem;
 	padding-right: 225px;
 }
 #learn .card-header {
@@ -250,6 +252,19 @@ footer a:hover {
 	}
 	#info {
 		background: url(../images/info-bg-mobile.jpg) no-repeat;
+	}
+
+	#learn .card {
+		background-color: #fff !important;
+		background-image: none !important;
+	}
+	#learn .card.pl {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+	#learn .card.pr {
+		padding-left: 2rem;
+		padding-right: 2rem;
 	}
 	#learn .card-header {
 		text-align: center;
