@@ -248,6 +248,7 @@ footer a:hover {
 		margin-bottom: 0;
 	}
 	p {
+		font-size: 1rem;
 		padding: 0;
 		margin-bottom: 1.6rem;
 	}
@@ -329,6 +330,7 @@ footer a:hover {
 		padding: 1rem;
 	}
 	.qa p {
+		font-size: 1rem;
 		padding: 0;
 	}
 	footer {
@@ -344,7 +346,7 @@ footer a:hover {
 }
 
 .who-text {
-	padding: 0% 0% 13% 0%;
+	padding: 0% 0% 16% 0%;
 }
 @media (max-width: 1800px) {
 	.who-text {
@@ -354,5 +356,10 @@ footer a:hover {
 @media (max-width: 1500px) {
 	.who-text {
 		padding: 0% 20% 8% 20%;
+	}
+}
+@media (max-width: 575.98px) {
+	.who-text {
+		padding: 0% 1rem 18%;
 	}
 }
