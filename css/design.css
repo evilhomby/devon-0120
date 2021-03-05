@@ -185,6 +185,9 @@ header .container, main .container {
 #seminar {
 	background: url(../images/seminar-bg-pc.jpg);
 }
+#seminar .container:first-child {
+	font-size: 1.2rem;
+}
 
 td.active {
 	background: #d8effe;
