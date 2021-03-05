@@ -214,6 +214,9 @@ td.active {
 .qa p:last-child {
 	margin-bottom: 0;
 }
+#seminar-text .card-header {
+	font-size: 1.2rem;
+}
 .bg-gray {
 	background: #e7ecf3;
 }
@@ -332,6 +335,9 @@ footer a:hover {
 	.qa p {
 		font-size: 1rem;
 		padding: 0;
+	}
+	#seminar-text .card-header {
+		font-size: 1rem;
 	}
 	footer {
 		padding-top: 7%;
